@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sara's World</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffeaf4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* Header Styles */
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(45deg, #ffb6d5, #ffcce5);
+      color: #fff;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    /* Front Page Picture */
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #ff80ab;
+      margin-top: 20px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1rem;
+      padding: 8px 16px;
+      background-color: #ff80ab;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #ff4081;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    section p {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+
+    /* Social Media Section */
+    .social-media {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    .social-media button {
+      background-color: #ff80ab;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .social-media button:hover {
+      background-color: #ff4081;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #ffcce5;
+      color: #333;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* Mobile Styles (Media Query) */
+    @media screen and (max-width: 768px) {
+      header {
+        padding: 30px 10px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 0.9rem;
+      }
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+      nav a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+      section p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Sara's World</h1>
+    <p>Every part of her feels like home, just like every moment with her feels like a dream.</p>
+    <!-- Add Sara's Picture Here -->
+    <img src="sara1.jpg" alt='Sara Picture' class="profile-pic">
+  </header>
+
+  <nav>
+    <a href="#about">About Sara</a>
+    <a href="#maggie">Maggie's Section</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#social-media">Social Media</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Sara</h2>
+    <p>Sara is not just beautiful but also the kindest person. She has a love for black and white but can make pink look amazing too!</p>
+    <p>Her favorite snacks are:</p>
+    <ul>
+      <li>Maz Maz Chips (مز مز)</li>
+      <li>Cheetos Motori (چیتوز موتوری)</li>
+      <li>Kalleh Yogurt (کاله)</li>
+    </ul>
+    <p>Sara’s prettiness, charm, and her adorable pout when she’s mad at me make her the most special person in my life.</p>
+  </section>
+
+  <section id="maggie">
+    <h2>Maggie's Section</h2>
+    <p>Maggie is Sara’s loyal companion and a bundle of joy. Stay tuned for pictures and videos of Maggie soon!</p>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <p>Pictures that capture Sara’s beauty and essence:</p>
+    <img src="sara1.jpg" alt="">
+    <img src="sara2.jpg" alt="">
+    <video src="sara-video.mp4" controls></video>
+  </section>
+
+  <section id="social-media" class="social-media">
+    <h2>Social Media</h2>
+    <button onclick="alert('You really think I would give my little girl\'s social media away?')">
+      Click for Social Media
+    </button>
+  </section>
+
+  <footer>
+    <p>Designed with endless love by Zhiro for Sara.</p>
+  </footer>
+</body>
+</html>
