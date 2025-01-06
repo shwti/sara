@@ -3,51 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Sara's World</title>
+  <title>Sara's World 🌸✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@600&family=Raleway:wght@400&display=swap" rel="stylesheet">
   <style>
     /* General Styles */
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffeaf4;
-      color: #333;
+      font-family: 'Dancing Script', cursive;
+      background: linear-gradient(to bottom, #ffeaf4, #ffccf0);
+      color: #ff5ca4;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      line-height: 1.8;
     }
 
     header, section, nav, footer {
-      width: 100%;
-      max-width: 600px; /* Keeps content centered and narrow for readability */
-      margin: 0 auto;
       text-align: center;
+      padding: 20px;
     }
 
     /* Header Styles */
     header {
-      padding: 50px 20px;
-      background: linear-gradient(45deg, #ffb6d5, #ffcce5);
+      background: linear-gradient(135deg, #ff99cc, #ff66b2);
       color: #fff;
+      padding: 40px 20px;
+      border-bottom: 3px dashed #ff80ab;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin: 0;
+      font-family: 'Playfair Display', serif;
     }
 
     header p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin-top: 10px;
+      font-family: 'Raleway', sans-serif;
     }
 
     .profile-pic {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 5px solid #ff80ab;
-      margin-top: 20px;
+      border: 6px dotted #ffb6d5;
+      margin: 20px auto;
+      box-shadow: 0 0 15px rgba(255, 182, 213, 0.5);
     }
 
     /* Navigation Bar */
@@ -55,145 +55,163 @@
       margin: 20px 0;
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
       justify-content: center;
+      gap: 15px;
     }
 
     nav a {
       color: #fff;
+      background-color: #ff80ab;
       text-decoration: none;
       font-size: 1rem;
-      padding: 8px 16px;
-      background-color: #ff80ab;
-      border-radius: 20px;
-      transition: background-color 0.3s ease;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-family: 'Raleway', sans-serif;
     }
 
     nav a:hover {
-      background-color: #ff4081;
+      background-color: #ff4d94;
     }
 
     /* Section Styles */
-    section {
-      padding: 40px 20px;
-    }
-
     section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
+      font-size: 2rem;
+      margin: 15px 0;
+      font-family: 'Playfair Display', serif;
     }
 
-    section p {
-      font-size: 1rem;
-      margin: 10px 0;
+    section p, ul {
+      font-size: 1.2rem;
+      font-family: 'Raleway', sans-serif;
     }
 
-    /* Social Media Section */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 5px 0;
+    }
+
+    /* Gallery Styles */
+    img, video {
+      max-width: 100%;
+      height: auto;
+      border: 4px solid #ffccf0;
+      border-radius: 10px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(255, 99, 164, 0.4);
+    }
+
+    /* Social Media Button */
     .social-media button {
-      background-color: #ff80ab;
-      border: none;
+      background: #ff80ab;
       color: #fff;
+      border: none;
       padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 20px;
+      font-size: 1.2rem;
+      border-radius: 25px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: all 0.3s ease;
+      font-family: 'Raleway', sans-serif;
     }
 
     .social-media button:hover {
-      background-color: #ff4081;
+      background: #ff4d94;
     }
 
     /* Footer Styles */
     footer {
-      background-color: #ffcce5;
-      color: #333;
-      padding: 10px;
-      font-size: 14px;
+      background: #ffb6d5;
+      color: #fff;
+      font-size: 1rem;
+      border-top: 3px dashed #ff80ab;
+      font-family: 'Raleway', sans-serif;
     }
 
-    /* Mobile Styles (Media Query) */
-    @media screen and (max-width: 768px) {
-      header {
-        padding: 30px 10px;
-      }
+    /* Emojis and Stickers */
+    .header-emoji, .footer-emoji {
+      font-size: 2rem;
+      display: block;
+    }
 
+    .stickers {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .sticker {
+      width: 100px;
+      height: auto;
+    }
+
+    /* Mobile Styles */
+    @media screen and (max-width: 768px) {
       header h1 {
         font-size: 2rem;
       }
 
-      header p {
-        font-size: 0.9rem;
-      }
-
-      .profile-pic {
-        width: 120px;
-        height: 120px;
-      }
-
-      nav a {
-        font-size: 0.9rem;
-        padding: 6px 12px;
-      }
-
       section h2 {
         font-size: 1.5rem;
-      }
-
-      section p {
-        font-size: 0.9rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
+    <span class="header-emoji">💖✨🌸</span>
     <h1>Welcome to Sara's World</h1>
-    <p>Every part of her feels like home, just like every moment with her feels like a dream.</p>
-    <img src="sara1.jpg" alt='Sara Picture' class="profile-pic">
+    <p>The place where magic happens and dreams come true! 🌟</p>
+    <img src="sara1.jpg" alt="Sara Picture" class="profile-pic">
   </header>
 
   <nav>
-    <a href="#about">About Sara</a>
-    <a href="#maggie">Maggie's Section</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#social-media">Social Media</a>
+    <a href="#about">💞 About Sara</a>
+    <a href="#maggie">🐶 Maggie</a>
+    <a href="#gallery">📸 Gallery</a>
+    <a href="#social-media">🌐 Social Media</a>
   </nav>
 
   <section id="about">
-    <h2>About Sara</h2>
-    <p>Sara is not just beautiful but also the kindest person. She has a love for black and white but can make pink look amazing too!</p>
-    <p>Her favorite snacks are:</p>
+    <h2>About Sara 🌹</h2>
+    <p>Sara is the sweetest, kindest, and prettiest girl ever! Her love for pink and sparkles makes her the queen of cuteness. 👑✨</p>
+    <p>Her favorite snacks: 🍟</p>
     <ul>
-      <li>Maz Maz Chips (مز مز)</li>
-      <li>Cheetos Motori (چیتوز موتوری)</li>
-      <li>Kalleh Yogurt (کاله)</li>
+      <li>🍟 Maz Maz Chips (مز مز)</li>
+      <li>🔥 Cheetos Motori (چیتوز موتوری)</li>
+      <li>🥛 Kalleh Yogurt (کاله)</li>
     </ul>
-    <p>Sara’s prettiness, charm, and her adorable pout when she’s mad at me make her the most special person in my life.</p>
+    <p>She's not just beautiful but has a heart of gold. 💕</p>
   </section>
 
   <section id="maggie">
-    <h2>Maggie's Section</h2>
-    <p>Maggie is Sara’s loyal companion and a bundle of joy. Stay tuned for pictures and videos of Maggie soon!</p>
+    <h2>Maggie's Section 🐾</h2>
+    <p>Maggie, Sara's adorable pup, brings endless joy and cuddles. Stay tuned for her cutest moments! 🐕💖</p>
   </section>
 
-  <section id="gallery" class="gallery">
-    <h2>Gallery</h2>
-    <p>Pictures that capture Sara’s beauty and essence:</p>
-    <img src="sara1.jpg" alt="">
-    <img src="sara2.jpg" alt="">
+  <section id="gallery">
+    <h2>Gallery 📸</h2>
+    <p>Beautiful moments of Sara captured forever: 🌟</p>
+    <img src="sara1.jpg" alt="Sara Picture">
+    <img src="sara2.jpg" alt="Another Sara Picture">
     <video src="sara-video.mp4" controls></video>
   </section>
 
   <section id="social-media" class="social-media">
-    <h2>Social Media</h2>
-    <button onclick="alert('You really think I would give my little girl\'s social media away?')">
+    <h2>Social Media 🌐</h2>
+    <button onclick="alert('Sorry, Sara’s socials are top secret! 🙈💕')">
       Click for Social Media
     </button>
   </section>
 
   <footer>
-    <p>Designed with endless love by Zhiro for Sara.</p>
+    <span class="footer-emoji">💖🌟🌸</span>
+    <p>Designed with endless love by Zhiro for the most amazing girl ever, Sara. 💕</p>
   </footer>
 </body>
 </html>
